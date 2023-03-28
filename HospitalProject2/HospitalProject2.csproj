@@ -50,6 +50,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -57,6 +58,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -100,6 +102,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -179,12 +182,24 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\AppointmentsDataController.cs" />
+=======
+    <Compile Include="Controllers\CareersDataController.cs" />
+>>>>>>> 9f4b89177e41b71cbbb3158be9d86c94ef4ebf8f
     <Compile Include="Controllers\DepartmentsDataController.cs" />
+    <Compile Include="Controllers\DonationsDataController.cs" />
+    <Compile Include="Controllers\FAQDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\PatientsDataController.cs" />
+=======
+    <Compile Include="Controllers\ProgramsDataController.cs" />
+    <Compile Include="Controllers\ServicesDataController.cs" />
+>>>>>>> 9f4b89177e41b71cbbb3158be9d86c94ef4ebf8f
     <Compile Include="Controllers\StaffsDataController.cs" />
+    <Compile Include="Controllers\VolunteersDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -236,9 +251,9 @@
     <Compile Include="Migrations\202303262108211_FAQ.designer.cs">
       <DependentUpon>202303262108211_FAQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303262117468_Donations.cs" />
-    <Compile Include="Migrations\202303262117468_Donations.designer.cs">
-      <DependentUpon>202303262117468_Donations.cs</DependentUpon>
+    <Compile Include="Migrations\202303280214586_CareersVolunteers.cs" />
+    <Compile Include="Migrations\202303280214586_CareersVolunteers.designer.cs">
+      <DependentUpon>202303280214586_CareersVolunteers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202303281419025_appointments-staffs.cs" />
     <Compile Include="Migrations\202303281419025_appointments-staffs.designer.cs">
@@ -372,8 +387,8 @@
     <EmbeddedResource Include="Migrations\202303262108211_FAQ.resx">
       <DependentUpon>202303262108211_FAQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303262117468_Donations.resx">
-      <DependentUpon>202303262117468_Donations.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303280214586_CareersVolunteers.resx">
+      <DependentUpon>202303280214586_CareersVolunteers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303281419025_appointments-staffs.resx">
       <DependentUpon>202303281419025_appointments-staffs.cs</DependentUpon>
