@@ -182,15 +182,15 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CareersController.cs" />
     <Compile Include="Controllers\CareersDataController.cs" />
     <Compile Include="Controllers\DepartmentsDataController.cs" />
-    <Compile Include="Controllers\DonationsDataController.cs" />
-    <Compile Include="Controllers\FAQDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProgramsDataController.cs" />
     <Compile Include="Controllers\ServicesDataController.cs" />
     <Compile Include="Controllers\StaffsDataController.cs" />
+    <Compile Include="Controllers\VolunteersController.cs" />
     <Compile Include="Controllers\VolunteersDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -251,6 +251,10 @@
     <Compile Include="Migrations\202303280214586_CareersVolunteers.designer.cs">
       <DependentUpon>202303280214586_CareersVolunteers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303281055036_updateDonationsNFAQ.cs" />
+    <Compile Include="Migrations\202303281055036_updateDonationsNFAQ.designer.cs">
+      <DependentUpon>202303281055036_updateDonationsNFAQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appointments.cs" />
@@ -264,6 +268,8 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Services.cs" />
     <Compile Include="Models\Staffs.cs" />
+    <Compile Include="Models\ViewModels\DetailsCareers.cs" />
+    <Compile Include="Models\ViewModels\UpdateCareers.cs" />
     <Compile Include="Models\Volunteers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -324,6 +330,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Careers\List.cshtml" />
+    <Content Include="Views\Volunteers\List.cshtml" />
+    <Content Include="Views\Careers\Details.cshtml" />
+    <Content Include="Views\Volunteers\Details.cshtml" />
+    <Content Include="Views\Careers\New.cshtml" />
+    <Content Include="Views\Volunteers\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -383,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303280214586_CareersVolunteers.resx">
       <DependentUpon>202303280214586_CareersVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303281055036_updateDonationsNFAQ.resx">
+      <DependentUpon>202303281055036_updateDonationsNFAQ.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

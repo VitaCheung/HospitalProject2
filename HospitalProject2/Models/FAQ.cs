@@ -1,5 +1,4 @@
-﻿using HospitalProject2.Migrations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -26,6 +25,6 @@ namespace HospitalProject2.Models
         public string Question { get; set; }
         public string Answer { get; set; }
         public int department_id { get; set; }
-        public DepartmentsDto Departments { get; set; }
+        
     }
 }
