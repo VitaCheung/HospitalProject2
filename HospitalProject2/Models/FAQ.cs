@@ -10,9 +10,9 @@ namespace HospitalProject2.Models
     public class FAQ
     {
         [Key]
-        public int FAQ_Id { get; set; }
-        public string Question { get; set; }
-        public string Answer { get; set; }
+        public int FAQ_id { get; set; }
+        public string question { get; set; }
+        public string answer { get; set; }
         [ForeignKey("Departments")]
         public int department_id { get; set; }
         public virtual Departments Departments { get; set; }
@@ -21,9 +21,9 @@ namespace HospitalProject2.Models
 
     public class FAQDto
     {
-        public int FAQ_Id { get; set; }
-        public string Question { get; set; }
-        public string Answer { get; set; }
+        public int FAQ_id { get; set; }
+        public string question { get; set; }
+        public string answer { get; set; }
         public int department_id { get; set; }
         
     }

@@ -255,6 +255,10 @@
     <Compile Include="Migrations\202303281055036_updateDonationsNFAQ.designer.cs">
       <DependentUpon>202303281055036_updateDonationsNFAQ.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303281637247_test.cs" />
+    <Compile Include="Migrations\202303281637247_test.designer.cs">
+      <DependentUpon>202303281637247_test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appointments.cs" />
@@ -398,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303281055036_updateDonationsNFAQ.resx">
       <DependentUpon>202303281055036_updateDonationsNFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303281637247_test.resx">
+      <DependentUpon>202303281637247_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

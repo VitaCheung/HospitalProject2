@@ -12,7 +12,7 @@
             CreateIndex("dbo.Donations", "department_id");
             CreateIndex("dbo.FAQs", "department_id");
         }
-        
+
         public override void Down()
         {
             DropIndex("dbo.FAQs", new[] { "department_id" });
