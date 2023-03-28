@@ -179,9 +179,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AppointmentsDataController.cs" />
     <Compile Include="Controllers\DepartmentsDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PatientsDataController.cs" />
     <Compile Include="Controllers\StaffsDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -238,6 +240,10 @@
     <Compile Include="Migrations\202303262117468_Donations.designer.cs">
       <DependentUpon>202303262117468_Donations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303281419025_appointments-staffs.cs" />
+    <Compile Include="Migrations\202303281419025_appointments-staffs.designer.cs">
+      <DependentUpon>202303281419025_appointments-staffs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appointments.cs" />
@@ -264,6 +270,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <None Include="jsondata\patient.json" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -367,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303262117468_Donations.resx">
       <DependentUpon>202303262117468_Donations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303281419025_appointments-staffs.resx">
+      <DependentUpon>202303281419025_appointments-staffs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
